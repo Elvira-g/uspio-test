@@ -1,0 +1,60 @@
+//theme colors
+$colorGreen: #6EB744;
+$colorGreenLDark: #62A53C;
+$colorGreyLight: #F4F4F4;
+$colorGreyDark: #37454A;
+$colorGreyDark60: rgba(55, 69, 74, 0.6);
+$colorGreyLight: #F4F4F4;
+$colorGrey: #DFDFDF;
+$colorWhite: #FFFFFF;
+
+$primary:       $colorGreen;
+$secondary:     $colorGreenLDark;
+$dark:          $colorGreyLight;
+$light:          $colorWhite;
+
+//theme fonts
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/proximanova_regular.ttf');
+  font-weight: $font-weight-normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/proximanova_bold.otf');
+  font-weight: $font-weight-bold;
+}
+
+$font-family-sans-serif: 'Proxima Nova';
+
+h1, h2, h3, h4 {
+  font-weight: $font-weight-bold !important;
+}
+
+$spacer: 1rem;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1194px
+);
+$font-size-base:              1rem;
+
+$h1-font-size:                $font-size-base * 2.625;
+$h2-font-size:                $font-size-base * 1.75;
+$h3-font-size:                $font-size-base * 1.25;
+$h4-font-size:                $font-size-base * 1.125;
+
+$input-btn-padding-y:         .625rem;
+$input-btn-padding-x:         1.875rem;
+
+$font-family-sans-serif:  'Proxima Nova';
+
+@import "../node_modules/bootstrap/scss/bootstrap";

@@ -1,0 +1,105 @@
+@use '../custom' as *;
+
+.header-top {
+    height: 92px;
+    .container-xl {
+        @media (max-width: 992px) {
+            justify-content: space-between !important;
+        }
+    }
+    .header-top__item {
+        margin-right: 2.5%;
+        &:last-child {
+            margin-right: 0;
+            width: 27.35%;
+            @media (max-width: 992px) {
+                width: auto;
+            }
+        }
+        &:nth-child(2) {
+            width: 52%;
+            @media (max-width: 992px) {
+                display: none !important;
+            }
+        }
+    }
+
+    .locations {
+        margin-right: 3%;
+        .locations__title {
+            color: $colorGreyDark;
+        }
+        .locations__icon {
+            margin-right: 10px;
+        }
+        .locations__text {
+            font-size: 1rem;
+            color: $colorGreyDark60;
+            white-space: nowrap;
+            cursor: pointer;
+            &:nth-child(1) {
+                padding-right: 13px;
+            }
+            &:nth-child(2) {
+                padding-left: 10px;
+            }
+        }
+        .locations__text-active {
+            color: $primary;
+            font-weight: bold;
+        }
+
+    }
+
+    .header-top__contact-btn {
+       margin-right: 3.5vw; 
+    }
+
+    .header-top__contact-items {
+        @media (max-width: 992px) {
+            gap: 5vw;
+        }
+    }
+    
+    .header-top__call-block {
+        // margin-right: $spacer * 2.5;
+        .header-top__phone {
+            color: $colorGreyDark;
+            line-height: 2rem;
+            white-space: nowrap
+        }
+    }
+}
+
+.header-nav {
+    // height: 70px;
+    .header-nav__menu-btn {
+        margin-right: calc(var(--bs-gutter-x) * 0.5);;
+    }
+    .navbar {
+        padding: 0;
+        @media (max-width: 992px) {
+            padding: 15px 0;
+        }
+    }
+    .header-nav__menu-list {
+        margin-right: 8.2vw;
+        @media (max-width: 992px) {
+            margin-right: 0;
+        }
+        .header-nav__nav-item {
+            padding: 0 1.5vw;
+            border-right: 1px solid $colorGrey;
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+    .header-nav__search-block {
+        width: 30.95%;
+        padding: $spacer * 1.44 $spacer * 2.25;
+        @media (max-width: 992px) {
+            width: 100%;;
+        }
+    }
+}

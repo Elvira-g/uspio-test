@@ -1,0 +1,98 @@
+@use '../custom' as *;
+
+.btn-white {
+    color: $colorGreyDark;
+    background-color: $colorWhite;
+    font-size: 0.875rem;
+    line-height: 100%;
+    text-align: left;
+    gap: 10px;
+    transition: 0.3s;
+    .header-top__btn-img {
+        fill: $primary;
+        transition: 0.3s;
+    }
+    p {
+       color: $colorGreyDark;
+       transition: 0.3s;
+    }
+    &:hover {
+        color: $colorWhite;
+        background-color: $primary;
+        .header-top__btn-img {
+            fill: $colorWhite
+        }
+        p {
+            color: $colorWhite;
+        }
+    }
+}
+
+.btn-primary {
+    color: $colorWhite;
+    background: linear-gradient(90deg, $primary 0%, $primary 100%);
+    font-size: 1rem;
+    line-height: 100%;
+    text-align: left;
+    transition: 0.3s;
+    padding: 10px 11px 10px 30px;
+    box-shadow: 0px 10px 20px 0px #84C7374D;
+    .section__btn-icon-block {
+        background-color: $colorWhite;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transition: 0.3s;
+        .section__btn-icon {
+            fill: $colorGreyDark;
+            transition: 0.3s;
+        }
+    }
+    p {
+        color: $colorWhite;
+        margin-bottom: 0;
+    }
+    &:hover {
+        color: $colorGreyDark;
+        background: $colorWhite;
+        .section__btn-icon-block {
+            background-color: $primary;
+            .section__btn-icon {
+                fill: $colorWhite;
+            }
+        }
+        p {
+            color: $colorGreyDark
+        }
+    }
+}
+
+.header-top__btn {
+    width: 214px;
+}
+
+.header-top__call-btn {
+    .header-top__call-text {
+        border-bottom: 1px dashed $primary;
+        font-size: 0.875rem;
+    }
+}
+
+.main__btn {
+    width: 250px;
+}
+
+.section__btn {
+    width: 332px;
+}
+
+.contacts__form-btn {
+    width: 157px;
+    padding: 15px 30px;
+    line-height: 22px;   
+    font-size: 1rem;
+    @media (max-width: 414px) {
+        width: 100%;
+        text-align: center;
+    }
+}
